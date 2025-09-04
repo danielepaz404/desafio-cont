@@ -3,7 +3,7 @@ const { DataTypes } = require("sequelize");
 module.exports = sequelize =>
     sequelize.define('Produto', {
         id: {
-            autoincrement: true,
+            autoIncrement: true,
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true
@@ -14,8 +14,25 @@ module.exports = sequelize =>
         },
         preco: {
             type: DataTypes.FLOAT,
-            allowNull: false
+            allowNull: false,
+            validate: {
+                min: 0,
+                isFloat: true
+            }
         },
-        estoque: DataTypes.INTEGER,
-        data_criacao: DataTypes.DATE,
+        estoque: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+            defaultValue: 0,
+            validate: {
+                min: 0,
+                isInt: true
+            }
+        },
+        data_criacao: DataTypes.DATE
+
+    }, {
+        tableName: 'produtos',
+        createdAt: 'data_criacao',
+        updatedAt: false,
     });
