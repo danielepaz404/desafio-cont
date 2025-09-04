@@ -140,3 +140,6 @@ vite.config.ts.timestamp-*
 
 # SQLite database files
 **/database.sqlite
+
+# VSCode files
+launch.json
