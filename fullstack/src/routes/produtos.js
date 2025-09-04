@@ -69,5 +69,40 @@ router.post('/', async (req, res, next) => {
   }
 });
 
+/**
+ * @openapi
+ * /produtos/{id}:
+ *   get:
+ *     description: Retorna um produto pelo ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *         description: ID do produto
+ *     tags:
+ *       - Produtos
+ *     responses:
+ *       200:
+ *         description: Retorna o produto em json
+ *       404:
+ *         description: Produto não encontrado
+ */
+router.get('/:id', async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    const produto = await Produto.findByPk(id);
+
+    if (!produto) {
+      return res.status(404).json({ error: 'Produto não encontrado' });
+    }
+
+    res.status(200).json(produto);
+  } catch (error) {
+    next(error);
+  }
+});
+
 
 module.exports = router;

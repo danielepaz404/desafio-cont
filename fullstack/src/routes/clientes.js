@@ -69,5 +69,39 @@ router.post('/', async (req, res, next) => {
   }
 });
 
+/**
+ * @openapi
+ * /clientes/{id}:
+ *   get:
+ *     description: Retorna um cliente pelo ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *         description: ID do cliente
+ *     tags:
+ *       - Clientes
+ *     responses:
+ *       200:
+ *         description: Retorna o cliente em json
+ *       404:
+ *         description: Cliente não encontrado
+ */
+router.get('/:id', async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    const cliente = await Cliente.findByPk(id);
+
+    if (!cliente) {
+      return res.status(404).json({ error: 'Cliente não encontrado' });
+    }
+
+    res.status(200).json(cliente);
+  } catch (error) {
+    next(error);
+  }
+});
 
 module.exports = router;
