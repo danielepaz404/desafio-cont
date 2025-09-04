@@ -43,30 +43,30 @@ Construir uma API em Node.js puro (http) ou qualquer biblioteca HTTP (Express, F
 
 ## ✅ Checklist do Teste Técnico
 
-- [ ] Criar uma **API em Node.js** usando:
+- [x] Criar uma **API em Node.js** usando:
 
   - Node.js puro (`http`) **ou** qualquer biblioteca HTTP (Express, Fastify, etc.)
 
-- [ ] Utilizar **SQLite** como banco de dados
+- [x] Utilizar **SQLite** como banco de dados
 
-- [ ] Criar duas tabelas no banco:
+- [x] Criar duas tabelas no banco:
 
   - **produtos** → id, nome, preço, estoque, data de criação
   - **clientes** → id, nome, email, data de criação
 
-- [ ] Implementar rotas de **cadastro**:
+- [x] Implementar rotas de **cadastro**:
 
   - `POST /produtos` → cadastrar produto
   - `POST /clientes` → cadastrar cliente
 
-- [ ] Implementar rotas de **consulta**:
+- [x] Implementar rotas de **consulta**:
 
   - `GET /produtos` → listar produtos (com paginação ou busca simples)
   - `GET /produtos/:id` → buscar produto por ID
   - `GET /clientes` → listar clientes
   - `GET /clientes/:id` → buscar cliente por ID
 
-- [ ] Regras de **validação**:
+- [x] Regras de **validação**:
 
   - Produto deve ter nome e preço obrigatórios
   - Cliente deve ter nome e email obrigatórios
