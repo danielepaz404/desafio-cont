@@ -96,6 +96,10 @@ h1 {
     margin-right: 24px;
 }
 
+.btn {
+    cursor: pointer;
+}
+
 .btn--primary {
     background-color: var(--blue);
     color: var(--white);
