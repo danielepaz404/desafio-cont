@@ -72,6 +72,8 @@ Construir uma API em Node.js puro (http) ou qualquer biblioteca HTTP (Express, F
   - Cliente deve ter nome e email obrigatórios
   - Email de cliente deve ser **único**
 
-- [ ] Entregar junto instruções claras de como rodar a API:
+- [x] Entregar junto instruções claras de como rodar a API:
+  - Entrar na pasta do projeto (`cd fullstack`)
   - Instalação de dependências (`npm install`)
   - Execução do projeto (`npm start`)
+  - Entrar na URL (`http://localhost:3000/api-docs/`)

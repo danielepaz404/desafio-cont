@@ -3,8 +3,8 @@ const express = require('express')
 const swaggerJSDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 
-const app = express()
-const port = 3000
+const app = express();
+const port = 3000;
 
 const options = {
   failOnErrors: true,
