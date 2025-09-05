@@ -83,6 +83,7 @@ Construir uma API em Node.js puro (http) ou qualquer biblioteca HTTP (Express, F
     <img width="1454" height="735" alt="image" src="https://github.com/user-attachments/assets/84ec18fe-9def-49e1-b590-93b098ef113d" />
   - Ao clicar em 'Execute' a resposta aparecerá como no exemplo abaixo:
     <img width="1460" height="665" alt="image" src="https://github.com/user-attachments/assets/b2ab2396-9cfc-452d-af02-bf9430653a42" />
+  - Também é possível rodar os testes da aplicação executando o comando `npm test`
 
 
 
