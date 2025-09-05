@@ -41,7 +41,7 @@ router.get('/', async (req, res, next) => {
  *       - Clientes
  *     responses:
  *       400:
- *         description: Paramétros inválidos
+ *         description: Parâmetros inválidos
  *       201:
  *         description: Retorna o cliente que foi criado
  */

@@ -41,7 +41,7 @@ router.get('/', async (req, res, next) => {
  *       - Produtos
  *     responses:
  *       400:
- *         description: Paramétros inválidos
+ *         description: Parâmetros inválidos
  *       201:
  *         description: Retorna o produto que foi criado
  */
