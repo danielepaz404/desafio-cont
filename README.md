@@ -77,3 +77,12 @@ Construir uma API em Node.js puro (http) ou qualquer biblioteca HTTP (Express, F
   - Instalação de dependências (`npm install`)
   - Execução do projeto (`npm start`)
   - Entrar na URL (`http://localhost:3000/api-docs/`)
+  - Na tela do Swagger você poderá testar os endpoints clicando em 'Try it out'
+    <img width="1454" height="685" alt="image" src="https://github.com/user-attachments/assets/05de39b5-2778-4a5e-9f30-191700d358a1" />
+  - Nas requisições POST poderá inserir os valores do body:
+    <img width="1454" height="735" alt="image" src="https://github.com/user-attachments/assets/84ec18fe-9def-49e1-b590-93b098ef113d" />
+  - Ao clicar em 'Execute' a resposta aparecerá como no exemplo abaixo:
+    <img width="1460" height="665" alt="image" src="https://github.com/user-attachments/assets/b2ab2396-9cfc-452d-af02-bf9430653a42" />
+
+
+
