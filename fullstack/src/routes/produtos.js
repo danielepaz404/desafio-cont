@@ -14,8 +14,12 @@ const { Produto } = require('../db');
  *         description: Retorna a lista de produtos em json
  */
 router.get('/', async (req, res, next) => {
-  const produtos = await Produto.findAll();
-  res.status(200).json(produtos);
+  try {
+    const produtos = await Produto.findAll();
+    res.status(200).json(produtos);
+  } catch (error) {
+    next(error);
+  }
 })
 
 /**

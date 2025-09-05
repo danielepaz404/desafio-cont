@@ -14,8 +14,12 @@ const { Cliente } = require('../db');
  *         description: Retorna a lista de clientes em json
  */
 router.get('/', async (req, res, next) => {
-  const clientes = await Cliente.findAll();
-  res.status(200).json(clientes);
+  try {
+    const clientes = await Cliente.findAll();
+    res.status(200).json(clientes);
+  } catch (error) {
+    next(error);
+  }
 })
 
 /**
